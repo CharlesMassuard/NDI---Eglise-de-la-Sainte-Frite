@@ -14,13 +14,19 @@ Lorsque l'on dit "Salut" ou "Hello" au chatbot, ce dernier nous répond respecti
 
 ***
 
-Ester Egg #3 - La phrase cachée
+Easter Egg #3 - La phrase cachée
 --
 Sur l'accueil de notre site, nous pouvons retrouver tout en bas, lorsque nous séléctionnons les caractères à la souris,
 la phrase *"Bravo tu as trouvé un easter egg !"*, qui est un lien cliquable renvoyant sur le site https://www.unaids.org/fr/frequently-asked-questions-about-hiv-and-aids
 
 ***
 
-Ester Egg #4 - Tinder
+Easter Egg #4 - Tinder
 --
 Dans l'interface du ChatBot, lorsque l'on clique 5 fois sur le symbole représentant une flamme, **https://www.tinder.com** s'ouvre.
+
+***
+
+Easter Egg #5 - Rick Roll
+--
+Lorsque nous envoyons un message vide au chatbot, ce dernier nous propose un lien, qui nous renvoie en réalité sur le célèbre clip musical de Rick Asthley.
