@@ -217,3 +217,12 @@ main section {
     box-shadow: 0 0 50px rgba(0,0,0,0.1);
     
 }
+
+#jeux{
+    display: flex;
+}
+
+.jeu{
+    width : 150px;
+    height : 150px;   
+}
