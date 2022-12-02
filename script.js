@@ -19,7 +19,7 @@ var verification = setInterval(function(){
 
     if(obstaclesLeft<20 && obstaclesLeft >0 && persoTop>= 130){
         obstacles.style.animation = "none";
-        alert("Dommage (mettre une info)")
+        alert("Dommage, savez-vous que les premiers cas de sida datte de 1981 ?")
 
     }
 

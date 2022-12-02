@@ -27,7 +27,7 @@ h1 {
 		0 0 160px #F65656;
 	}
 }
-nav
+
 #menu {
     display: flex;
 }
@@ -215,16 +215,14 @@ main section {
     padding: 20px;
     border-radius: 6px;
     box-shadow: 0 0 50px rgba(0,0,0,0.1);
+    flex-basis: 40%;
+    width: 50%;
+    margin-left: 25%;
     
 }
 
-#jeux{
-    display: flex;
-    flex-wrap: nowrap;
+#egg > p{
+    color: #07252d ;
+    text-decoration: underline ;
 }
 
-section>a>img{
-    width : 150px;
-    height : 150px;   
-    margin: 20px;
-}
