@@ -220,9 +220,11 @@ main section {
 
 #jeux{
     display: flex;
+    flex-wrap: nowrap;
 }
 
-.jeu{
+section>a>img{
     width : 150px;
     height : 150px;   
+    margin: 20px;
 }
