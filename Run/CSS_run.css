@@ -1,0 +1,219 @@
+body {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #07252d;
+}
+
+h1 {
+    text-align: center;
+    color: #F65656;
+    animation: animate 5s linear infinite;
+}
+
+@keyframes animate 
+{
+	0%,18%,20%,50.1%,60%,65.1%,80%,90.1%,92%
+	{
+		color: #F65656;
+		text-shadow: none;
+	}
+	18.1%,20.1%,30%,50%,60.1%,65%,80.1%,90%,92.1%,100%
+	{
+		color: #fff;
+		text-shadow: 0 0 10px #F65656,
+		0 0 20px #F65656,
+		0 0 40px #F65656,
+		0 0 80px #F65656,
+		0 0 160px #F65656;
+	}
+}
+
+#menu {
+    display: flex;
+}
+
+#menu > li {
+    flex-grow: 1;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.parti_main {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+img {
+    width: 15vw;
+}
+
+main {
+    flex-basis: 70%;
+}
+
+aside {
+    flex-basis: 29%;
+}
+
+header {
+    flex-basis: 100%;
+}
+header > img {
+    width: 100%;
+}
+
+p {
+    color: #fff;
+}
+
+h2 {
+    color: #fff;
+	text-shadow: 0 0 10px #F65656,
+    0 0 20px #F65656,
+	0 0 40px #F65656,
+	0 0 80px #F65656,
+	0 0 160px #F65656;
+}
+
+nav > ul > li > a {
+    color: #fff;
+	text-shadow: 0 0 10px #F65656,
+    0 0 20px #F65656,
+	0 0 40px #F65656,
+	0 0 80px #F65656,
+	0 0 160px #F65656;
+}
+
+a:hover {
+    font-weight: bold;
+}
+
+.reseau > a{
+    color: #fff;
+    display: flex;
+    margin: 2vh;
+}
+
+#mail {
+    width: 5vw;
+    height: 8vh;
+}
+
+#reseaux {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#contact {
+    flex-basis: 100%;
+}
+
+#present_section {
+    flex-basis: 100%;
+}
+
+strong{
+    text-decoration: underline;
+}
+
+#img_present{
+    flex-basis: 40%;
+    margin: 1vw;
+}
+
+.jeu {
+    width: 500px;
+    height: 200px;
+    border: 1px solid #000;
+    overflow: hidden;
+    border: 0;
+    border-bottom: 1px solid #18f;
+}
+
+.perso{
+    width: 20px;
+    height: 50px;
+    position: relative;
+    top: 150px;
+   
+    
+}
+
+.animation {
+    animation:  perso-saut 500ms infinite;
+}
+
+/*Animation personnage saute*/
+@keyframes   perso-saut {
+    0%{
+        top: 130px;
+    }
+    25% {
+        top: 80px;
+    }
+    50% {
+        top: 80px;
+    }
+    100% {
+        top: 130px;
+    }
+}
+
+.perso img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.obstacles {
+    width: 20px;
+    height: 20px;
+    background-color: #333;
+    position: relative;
+    top:130px;
+    left: 480px;
+    border-radius: 50%;
+    animation: anime-obstacles 2.5s infinite ;
+    
+}
+
+/*animation obstacles*/
+
+@keyframes anime-obstacles {
+    0%{
+        left: 480px;
+    }
+    100% {
+        left: -40px;
+    }
+
+}
+
+
+.control {
+    margin-top: 20px;
+    text-align: center;
+}
+
+main a,main button {
+    padding: 10px 50px;
+    border-radius: 4px;
+    border: 0;
+    box-shadow: 0 0 50px rgba(0,0,0,0.1);
+    font-weight: bold;
+    cursor: pointer;
+    background-color: #fff;
+    font-size: 15px;
+    text-decoration: 0;
+    color: #000;
+}
+
+main section {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 6px;
+    box-shadow: 0 0 50px rgba(0,0,0,0.1);
+    
+}
