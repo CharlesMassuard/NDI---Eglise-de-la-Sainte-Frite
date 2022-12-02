@@ -1,0 +1,213 @@
+<html>
+<head>
+	<title>My space invader</title>
+	<script src="app.js"></script>
+<style>
+	html,body {margin : 0px; padding: 0px; width : 100%; height: 100%}
+	body {background: url('globule.jpg'); background-size: cover; overflow: hidden;}
+</style>
+
+</head>
+<header>
+    <a href=" le_lien_du_site"> RETOUR</a>
+</header>
+<body>
+	
+	<script type="text/javascript">
+		let vaisseau = new Sprite("homme.svg",400,700);
+		let alien1 = new Sprite("femme.png",100,100);
+		let alien2 = new Sprite("femme.png",200,100);
+		let alien3 = new Sprite("femme.png",300,100);
+        let alien4 = new Sprite("femme.png",400,100);
+		let alien5 = new Sprite("femme.png",500,100);
+		let alien6 = new Sprite("femme.png",600,100);
+        let alien7 = new Sprite("femme.png",700,100);
+		let alien8 = new Sprite("femme.png",800,100);
+        let alien9 = new Sprite("femme.png",900,100);
+		let alien10 = new Sprite("femme.png",1000,100);
+
+
+		
+		let missile = new Sprite("peni.png",100,100);
+		missile.display="none";
+		
+		document.onkeydown = function (event) {
+			console.log(event.keyCode);
+			// l'un des attributs possibles de event est keyCode : 
+			// comme ici, l'evenement est lié aux touches appuyées
+			// on peut demander le keyCode de ces touches.
+			// f : 70
+			// s : 83
+			// space : 32
+			if (event.keyCode==70 || event.keyCode==39 ){
+				vaisseau.left+=30;
+			}
+			if (event.keyCode==83 || event.keyCode==37 ){
+				vaisseau.left-=30;
+			}
+			
+
+
+			if (vaisseau.left<=0) vaisseau.left = 0;
+			if (vaisseau.left >= document.body.clientWidth-vaisseau._node.width) vaisseau.left=document.body.clientWidth-vaisseau._node.width;
+			if (event.keyCode == 32){
+				if (missile.display=="none"){
+				// condition qui permet de ne lancer un missile que 
+				// si aucun missile n'est deja en vol
+
+				missile.display="block";
+				missile.left = vaisseau.left+vaisseau._node.width/2;
+				missile.top = vaisseau.top;
+				missile.startAnimation(moveMissile,20);
+				// on appelle la methode startAnimation
+				// associée à l'objet missile
+				// avec la fonction missile comme premier parametre (callback)
+				// et 20 ms comme seconde parametre (mis dans interval
+				// par la fonction anonyme executée lorsque l'on appelle 
+				// la methode)
+				}
+			}
+			
+		}
+			
+	function moveMissile(missile){
+		missile.top -=10;
+		if (missile.top<100) {
+		missile.stopAnimation(); // sortie de l'écran : on retire le timer de l'objet
+		missile.display = "none";
+		}
+		if (alien1.display != "none" && missile.checkCollision(alien1)){
+			// on ne fait un test QUE si l'alien est visible
+			// sinon le missile traverse l'écran
+			missile.display="none";
+			missile.stopAnimation();
+			alien1.display="none";
+			alien1.stopAnimation();
+			// on retire l'alien
+            
+		}
+        
+        if (alien2.display != "none" && missile.checkCollision(alien2)){
+			// on ne fait un test QUE si l'alien est visible
+			// sinon le missile traverse l'écran
+			missile.display="none";
+			missile.stopAnimation();
+			alien2.display="none";
+			alien2.stopAnimation();
+			// on retire l'alien
+		}
+
+        if (alien3.display != "none" && missile.checkCollision(alien3)){
+			// on ne fait un test QUE si l'alien est visible
+			// sinon le missile traverse l'écran
+			missile.display="none";
+			missile.stopAnimation();
+			alien3.display="none";
+			alien3.stopAnimation();
+			// on retire l'alien
+		}
+
+        if (alien4.display != "none" && missile.checkCollision(alien4)){
+			// on ne fait un test QUE si l'alien est visible
+			// sinon le missile traverse l'écran
+			missile.display="none";
+			missile.stopAnimation();
+			alien4.display="none";
+			alien4.stopAnimation();
+			// on retire l'alien
+		}
+        
+        if (alien5.display != "none" && missile.checkCollision(alien5)){
+			// on ne fait un test QUE si l'alien est visible
+			// sinon le missile traverse l'écran
+			missile.display="none";
+			missile.stopAnimation();
+			alien5.display="none";
+			alien5.stopAnimation();
+			// on retire l'alien
+		}
+
+        if (alien6.display != "none" && missile.checkCollision(alien6)){
+			// on ne fait un test QUE si l'alien est visible
+			// sinon le missile traverse l'écran
+			missile.display="none";
+			missile.stopAnimation();
+			alien6.display="none";
+			alien6.stopAnimation();
+			// on retire l'alien
+		}
+
+        if (alien7.display != "none" && missile.checkCollision(alien7)){
+			// on ne fait un test QUE si l'alien est visible
+			// sinon le missile traverse l'écran
+			missile.display="none";
+			missile.stopAnimation();
+			alien7.display="none";
+			alien7.stopAnimation();
+			// on retire l'alien
+		}
+        
+        if (alien8.display != "none" && missile.checkCollision(alien8)){
+			// on ne fait un test QUE si l'alien est visible
+			// sinon le missile traverse l'écran
+			missile.display="none";
+			missile.stopAnimation();
+			alien8.display="none";
+			alien8.stopAnimation();
+			// on retire l'alien
+		}
+
+        if (alien9.display != "none" && missile.checkCollision(alien9)){
+			// on ne fait un test QUE si l'alien est visible
+			// sinon le missile traverse l'écran
+			missile.display="none";
+			missile.stopAnimation();
+			alien9.display="none";
+			alien9.stopAnimation();
+			// on retire l'alien
+		}
+
+        if (alien10.display != "none" && missile.checkCollision(alien10)){
+			// on ne fait un test QUE si l'alien est visible
+			// sinon le missile traverse l'écran
+			missile.display="none";
+			missile.stopAnimation();
+			alien10.display="none";
+			alien10.stopAnimation();
+			// on retire l'alien
+            let fin = new Sprite("kill2.png",500,25);
+		}
+	}
+
+	function moveAlienToRight(alien){
+		alien.left += 10;
+		if (alien.left > document.body.clientWidth-vaisseau._node.width){
+			alien.stopAnimation();
+			alien.top += 50;
+			alien.startAnimation(moveAlienToLeft,40);
+		}
+	}
+
+	function moveAlienToLeft(alien){
+		alien.left -= 10;
+		if (alien.left < 0){
+			alien.stopAnimation();
+			alien.top += 50;
+			alien.startAnimation(moveAlienToRight,40);
+		}
+	}
+	
+	alien1.startAnimation(moveAlienToRight,40);
+	alien2.startAnimation(moveAlienToRight,40);
+	alien3.startAnimation(moveAlienToRight,40);
+    alien4.startAnimation(moveAlienToRight,40);
+	alien5.startAnimation(moveAlienToRight,40);
+	alien6.startAnimation(moveAlienToRight,40);
+    alien7.startAnimation(moveAlienToRight,40);
+	alien8.startAnimation(moveAlienToRight,40);
+	alien9.startAnimation(moveAlienToRight,40);
+    alien10.startAnimation(moveAlienToRight,40);
+
+	</script>
+</body>
+</html>
