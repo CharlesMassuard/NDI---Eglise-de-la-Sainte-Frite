@@ -1,0 +1,123 @@
+body {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #07252d;
+}
+h1 {
+    text-align: center;
+    color: #F65656;
+    animation: animate 5s linear infinite;
+}
+
+@keyframes animate 
+{
+	0%,18%,20%,50.1%,60%,65.1%,80%,90.1%,92%
+	{
+		color: #F65656;
+		text-shadow: none;
+	}
+	18.1%,20.1%,30%,50%,60.1%,65%,80.1%,90%,92.1%,100%
+	{
+		color: #fff;
+		text-shadow: 0 0 10px #F65656,
+		0 0 20px #F65656,
+		0 0 40px #F65656,
+		0 0 80px #F65656,
+		0 0 160px #F65656;
+	}
+}
+
+#menu {
+    display: flex;
+}
+
+#menu > li {
+    flex-grow: 1;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.perso {
+    display: flex;
+    flex-wrap: nowrap;
+}
+.img_perso {
+    margin: 2vw;
+    flex-grow: 1;
+}
+img {
+    width: 20vw;
+}
+
+main {
+    flex-basis: 70%;
+}
+
+aside {
+    flex-basis: 29%;
+}
+
+header {
+    flex-basis: 100%;
+}
+
+div {
+    flex-basis: 50%;
+}
+
+header > img {
+    width: 100%;
+}
+
+p {
+    color: #fff;
+}
+
+h2 {
+    color: #fff;
+	text-shadow: 0 0 10px #F65656,
+    0 0 20px #F65656,
+	0 0 40px #F65656,
+	0 0 80px #F65656,
+	0 0 160px #F65656;
+}
+
+nav > ul > li > a {
+    color: #fff;
+	text-shadow: 0 0 10px #F65656,
+    0 0 20px #F65656,
+	0 0 40px #F65656,
+	0 0 80px #F65656,
+	0 0 160px #F65656;
+}
+
+a:hover {
+    font-weight: bold;
+}
+
+.reseau > a{
+    color: #fff;
+    display: flex;
+    margin: 2vh;
+}
+
+#mail {
+    width: 5vw;
+    height: 8vh;
+}
+
+#reseaux {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#contact {
+    flex-basis: 100%;
+}
+
+#easter > a {
+    color: #fff;
+    text-decoration: none;
+}
