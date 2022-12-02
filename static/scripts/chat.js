@@ -94,8 +94,14 @@ function sendButton() {
     getResponse();
 }
 
+nbr_clics = 1
+
 function heartButton() {
-    buttonSendText("Cliqué !")
+    nbr_clics ++;
+    if(nbr_clics == 6) {
+        open("https://www.tinder.com");
+    }
+    buttonSendText("Coucou !");
 }
 
 // Press enter to send a message
