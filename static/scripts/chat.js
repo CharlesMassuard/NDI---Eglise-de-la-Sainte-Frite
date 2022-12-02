@@ -42,7 +42,7 @@ function firstBotMessage() {
 
     $("#chat-timestamp").append(time);
     document.getElementById("userInput").scrollIntoView(false);
-}
+};
 
 firstBotMessage();
 
