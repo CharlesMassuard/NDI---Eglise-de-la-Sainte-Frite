@@ -35,7 +35,7 @@ function getTime() {
 
 // Gets the first message
 function firstBotMessage() {
-    let firstMessage = "Hey, je suis un bot automatique ! Comment puis-je t'aider ?"
+    let firstMessage = "Hey, je suis un bot automatique ! Afin de faciliter ton expérience, voici quelques conseils : tu peux me demander de t'emmener directement à un jeu que nous te proposons (memory ou space) ou encore me poser des questions sur les IST !"
     document.getElementById("botStarterMessage").innerHTML = '<p class="botText"><span>' + firstMessage + '</span></p>';
 
     let time = getTime();
