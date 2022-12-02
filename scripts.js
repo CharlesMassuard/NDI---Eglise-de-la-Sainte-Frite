@@ -70,7 +70,7 @@ function resetBoard() {
 function endGame() {
   setTimeout(() => {
     stopTimer();
-    alert(`You won in ${moves} moves!`);
+    alert(`Tu as gagné en ${moves} mouvement!`);
   }, 300);
 }
 
